@@ -1,0 +1,1 @@
+python -c 'import struct; a = 0xAABBCCDD; b = (struct.pack("I", a)).encode("hex"); print "\\x" + "\\x".join([b[i:i+2] for i in range(0, len(b), 2)])'
